@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Feed</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <script src="https://kit.fontawesome.com/13ad6678d8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" integrity="sha512-kp7YHLxuJDJcOzStgd6vtpxr4ZU9kjn77e6dBsivSz+pUuAuMlE2UTdKB7jjsWT84qbS8kdCWHPETnP/ctrFsA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-500 to-pink-500 h-screen pb-10">
+
+    <nav class="w-full p-6 bg-white fixed left-0 top-0 text-right shadow-md">
+        
+        <a href="/logout"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+    </nav>
+
+
+    <section class="w-3/4 m-auto mt-28 bg-white p-12 pt-10 px-12 py-8 rounded-md">
+        <h2 class="text-xl bold">Welcome to your News Feed <%=name%></h2>
+    </section>
+
+    <input type="hidden" id="user_id_field" value="<%= user_id %> ">
+
+    <!-- New Post from here -->
+    <!-- <section class="mt-8 w-3/4 m-auto bg-white p-12 pt-10 rounded-md">
+        <h2 class="text-2xl bold mb-2">Create a Post</h2>
+        <form action="/post/new" method="POST" id="post-form" class="flex flex-row">
+            <textarea name="content" placeholder="What's on your mind?" class="border-2 px-3 py-2 w-full"></textarea>
+            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 float-right min-w-max"><i class="far fa-paper-plane"></i> Now</button>
+        </form>
+    </section>   -->
+
+    <section id="app">
+        <!-- <div class="mt-8 w-8/12 m-auto bg-white p-12 pt-10 rounded-md flex gap-x-4">
+            <i class="far fa-user-circle text-8xl"></i>
+            <div>
+                <div class="flex flex-row justify-between items-center">
+                    <h3 class="text-lg bold">Poster Name</h3>
+                    <span class="text-gray-400 text-sm">05 October 2001</span> 
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum adipisci eum distinctio eveniet, veniam quasi dignissimos accusantium doloremque commodi ipsum cum exercitationem animi iste? Officiis eligendi sint harum possimus laboriosam. Optio repellendus, cupiditate veritatis nemo eius voluptatibus voluptatem, cum molestiae mollitia corrupti dicta recusandae! A itaque accusantium odit alias odio aspernatur hic aliquam, nulla omnis ad soluta fugit exercitationem doloremque?</p>
+            </div>
+        </div> -->
+    </section>
+
+    <script src="./js/feed.js" type="text/babel"></script>
+
+    
+</body>
+</html>
